@@ -18,6 +18,7 @@ export function createNewTask() {
     taskNameDiv.className = "card-task-name";
     const taskNameInput = document.createElement("input");
     taskNameInput.readOnly = true;
+    taskNameInput.placeholder = "Name your task";
     taskNameInput.maxLength = 25;
     taskNameInput.value = taskName;
     taskNameInput.type = "text";
@@ -59,20 +60,26 @@ export function createNewTask() {
     editButton.textContent = "Edit";
     editButton.className = "tdl-card-btn";
     let i = true;
+    let k;
     editButton.addEventListener("click", () => {
         if (taskNameInput.value === "") {
-            tdlOutput.removeChild(newTaskCard);
+            taskNameInput.value = k;
+            taskNameInput.readOnly = true;
+            taskNameInput.style.borderBottom = 'transparent solid 2px';
+            editButton.textContent = "Edit";
+            i = true
             return
         }
 
         if (i == true) {
+            k = taskNameInput.value;
             taskNameInput.readOnly = false;
             taskNameInput.style.borderBottom = '#4B4237 solid 2px';
             editButton.textContent = "Confirm";
             i = false
         } else {
             taskNameInput.readOnly = true;
-            taskNameInput.style.borderBottom = '';
+            taskNameInput.style.borderBottom = 'transparent solid 2px';
             editButton.textContent = "Edit";
             i = true
         }
@@ -80,7 +87,11 @@ export function createNewTask() {
     taskNameInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             if (taskNameInput.value === "") {
-                tdlOutput.removeChild(newTaskCard);
+                taskNameInput.value = k;
+                taskNameInput.readOnly = true;
+                taskNameInput.style.borderBottom = 'transparent solid 2px';
+                editButton.textContent = "Edit";
+                i = true
                 return
             }
             taskNameInput.readOnly = true;
