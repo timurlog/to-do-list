@@ -63,6 +63,63 @@ header .box {
 /* ### DESKTOP ### */
 /* ### BIG DESKTOP ### */
 /* ### SECTION TO DO LIST ### */
+.to-do-list {
+  margin-top: 60px;
+  width: 100%;
+}
+.to-do-list .tdl-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.to-do-list .tdl-content .tdl-input {
+  display: flex;
+  gap: 25px;
+}
+.to-do-list .tdl-content .tdl-input .input-container .tdl-new-input {
+  height: 50px;
+  width: 350px;
+  border: none;
+  outline: none;
+  color: #4B4237;
+  padding: 0 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #EDE7D9;
+  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+  transition: all 1s;
+}
+.to-do-list .tdl-content .tdl-input .input-container .tdl-new-input:hover {
+  background: linear-gradient(145deg, #d5d0c3, #fef7e8);
+  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+}
+.to-do-list .tdl-content .tdl-input .input-container .tdl-new-input:focus {
+  background: #EDE7D9;
+  box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
+}
+.to-do-list .tdl-content .tdl-input .button-container .tdl-input-add {
+  cursor: pointer;
+  height: 50px;
+  border: none;
+  color: #4B4237;
+  padding: 0 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #EDE7D9;
+  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+  transition: all 0.3s ease;
+}
+.to-do-list .tdl-content .tdl-input .button-container .tdl-input-add:hover {
+  background: linear-gradient(145deg, #d5d0c3, #fef7e8);
+  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+}
+.to-do-list .tdl-content .tdl-input .button-container .tdl-input-add:active {
+  transition: all 0.1s ease;
+  background: #EDE7D9;
+  box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
+}
+
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 /* ### TABLET ### */

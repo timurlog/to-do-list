@@ -31,7 +31,12 @@
         <section class='to-do-list'>
             <div class="tdl-content">
                 <div class="tdl-input">
-
+                    <div class="input-container">
+                        <input onclick="sound('./public/assets/music/click-sound.mp3')" placeholder="Add a new task" type="text" name="new-to-do-list" class="tdl-new-input">
+                    </div>
+                    <div class="button-container">
+                        <button onclick="sound('./public/assets/music/click-sound.mp3')" id="tdlInputAdd" class="tdl-input-add">Add</button>
+                    </div>
                 </div>
                 <div class="tdl-filters">
 
@@ -45,6 +50,7 @@
 
     <!-- ########## SCRIPTS ######### -->
     <script type="module" src="./public/js/main.js"></script>
+    <script src="./public/js/sound.js"></script>
 
 </body>
 </html>
