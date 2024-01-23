@@ -46,6 +46,10 @@ header .text p {
   text-align: center;
   color: #A49694;
 }
+header .box {
+  height: 75px;
+  width: 75px;
+}
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
