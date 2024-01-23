@@ -7,6 +7,26 @@
         display: flex
         flex-direction: column
         align-items: center
+        .button-container
+            button
+                cursor: pointer
+                height: 50px
+                border: none
+                color: #D5A021
+                padding: 0 15px
+                font-size: 20px
+                font-weight: 600
+                border-radius: 10px
+                background: #EDE7D9
+                box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
+                transition: all 0.3s ease
+            button:hover
+                background: linear-gradient(145deg, #d5d0c3, #fef7e8)
+                box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
+            button:active
+                transition: all 0.1s ease
+                background: #EDE7D9
+                box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff
         .tdl-input
             display: flex
             gap: 25px
@@ -29,25 +49,24 @@
                 .tdl-new-input:focus
                     background: #EDE7D9
                     box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff
-            .button-container
-                .tdl-input-add
-                    cursor: pointer
-                    height: 50px
-                    border: none
-                    color: #4B4237
-                    padding: 0 15px
-                    font-size: 20px
-                    border-radius: 10px
-                    background: #EDE7D9
-                    box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
-                    transition: all 0.3s ease
-                .tdl-input-add:hover
-                    background: linear-gradient(145deg, #d5d0c3, #fef7e8)
-                    box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
-                .tdl-input-add:active
-                    transition: all 0.1s ease
-                    background: #EDE7D9
-                    box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff
+        .tdl-filters
+            margin-top: 50px
+            display: flex
+            align-items: center
+            gap: 25px
+            .filters-text
+                font-size: 24px
+                color: #4B4237
+                font-weight: 900
+            .filters-buttons
+                display: flex
+                align-items: center
+                gap: 25px
+                .button-container
+                    .tdl-filters-btn
+                        color: #4B4237
+                    .active
+                        color: #D5A021
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */

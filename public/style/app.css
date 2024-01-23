@@ -73,6 +73,28 @@ header .box {
   flex-direction: column;
   align-items: center;
 }
+.to-do-list .tdl-content .button-container button {
+  cursor: pointer;
+  height: 50px;
+  border: none;
+  color: #D5A021;
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: #EDE7D9;
+  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+  transition: all 0.3s ease;
+}
+.to-do-list .tdl-content .button-container button:hover {
+  background: linear-gradient(145deg, #d5d0c3, #fef7e8);
+  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+}
+.to-do-list .tdl-content .button-container button:active {
+  transition: all 0.1s ease;
+  background: #EDE7D9;
+  box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
+}
 .to-do-list .tdl-content .tdl-input {
   display: flex;
   gap: 25px;
@@ -98,26 +120,27 @@ header .box {
   background: #EDE7D9;
   box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
 }
-.to-do-list .tdl-content .tdl-input .button-container .tdl-input-add {
-  cursor: pointer;
-  height: 50px;
-  border: none;
+.to-do-list .tdl-content .tdl-filters {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.to-do-list .tdl-content .tdl-filters .filters-text {
+  font-size: 24px;
   color: #4B4237;
-  padding: 0 15px;
-  font-size: 20px;
-  border-radius: 10px;
-  background: #EDE7D9;
-  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
-  transition: all 0.3s ease;
+  font-weight: 900;
 }
-.to-do-list .tdl-content .tdl-input .button-container .tdl-input-add:hover {
-  background: linear-gradient(145deg, #d5d0c3, #fef7e8);
-  box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
+.to-do-list .tdl-content .tdl-filters .filters-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
-.to-do-list .tdl-content .tdl-input .button-container .tdl-input-add:active {
-  transition: all 0.1s ease;
-  background: #EDE7D9;
-  box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
+.to-do-list .tdl-content .tdl-filters .filters-buttons .button-container .tdl-filters-btn {
+  color: #4B4237;
+}
+.to-do-list .tdl-content .tdl-filters .filters-buttons .button-container .active {
+  color: #D5A021;
 }
 
 /* ######### RESPONSIVE ######### */
