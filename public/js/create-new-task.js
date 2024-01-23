@@ -1,3 +1,4 @@
+import { menuCards, menuFilterItems } from "./main.js";
 
 let newTaskName = document.querySelector('#tdlNewInput');
 let inputAlert = document.querySelector('.input-alert');
@@ -39,7 +40,7 @@ export function createNewTask() {
         if (j == true) {
             newTaskCard.className = "output-card isDone";
             taskNameInput.style.color = '#21D5A0';
-            doneButton.textContent = "Unfinished";
+            doneButton.textContent = "Unfinish";
             j = false
         } else {
             newTaskCard.className = "output-card inProgress";
@@ -47,6 +48,7 @@ export function createNewTask() {
             doneButton.textContent = "Done";
             j = true
         }
+        menuCards = document.querySelectorAll('.output-card');
     });
     
     const buttonContainerDiv2 = document.createElement("div");
@@ -129,7 +131,13 @@ export function createNewTask() {
     newTaskCard.appendChild(buttonsDiv);
 
     const tdlOutput = document.querySelector("#tdlOutput");
-    tdlOutput.appendChild(newTaskCard);
+    
+    if (tdlOutput.children.length > 0) {
+        tdlOutput.insertBefore(newTaskCard, tdlOutput.firstElementChild);
+    } else {
+        tdlOutput.appendChild(newTaskCard);
+    }
 
     newTaskName.value = "";
+    inputAlert.innerHTML= "";
 }

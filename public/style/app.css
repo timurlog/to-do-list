@@ -160,7 +160,7 @@ header .box {
   width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 65px;
 }
 .to-do-list .tdl-content .tdl-output .output-card {
   padding: 25px;
