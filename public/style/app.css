@@ -1,0 +1,46 @@
+/* ########### FONTS ############ */
+@font-face {
+  font-family: "";
+  src: url("../assets/fonts/");
+}
+/* ############ BODY ############  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  min-width: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ########### HEADER ########### */
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
+/* ############ MAIN ############ */
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
+/* ### SECTION TO DO LIST ### */
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
+/* ########### FOOTER ########### */
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+/* ### TABLET ### */
+/* ### DESKTOP ### */
+/* ### BIG DESKTOP ### */
+
+/*# sourceMappingURL=app.css.map */
