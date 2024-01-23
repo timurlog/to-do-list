@@ -73,7 +73,7 @@ header .box {
   flex-direction: column;
   align-items: center;
 }
-.to-do-list .tdl-content .button-container button {
+.to-do-list .tdl-content .button-container button, .to-do-list .tdl-content .button-containers button, .to-do-list .tdl-content .button-container-d button {
   cursor: pointer;
   height: 50px;
   border: none;
@@ -86,20 +86,25 @@ header .box {
   box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
   transition: all 0.3s ease;
 }
-.to-do-list .tdl-content .button-container button:hover {
+.to-do-list .tdl-content .button-container button:hover, .to-do-list .tdl-content .button-containers button:hover, .to-do-list .tdl-content .button-container-d button:hover {
   background: linear-gradient(145deg, #d5d0c3, #fef7e8);
   box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
 }
-.to-do-list .tdl-content .button-container button:active {
+.to-do-list .tdl-content .button-container button:active, .to-do-list .tdl-content .button-containers button:active, .to-do-list .tdl-content .button-container-d button:active {
   transition: all 0.1s ease;
   background: #EDE7D9;
   box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
 }
 .to-do-list .tdl-content .tdl-input {
   display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.to-do-list .tdl-content .tdl-input .tdl-input-top {
+  display: flex;
   gap: 25px;
 }
-.to-do-list .tdl-content .tdl-input .input-container .tdl-new-input {
+.to-do-list .tdl-content .tdl-input .tdl-input-top .input-container .tdl-new-input {
   height: 50px;
   width: 350px;
   border: none;
@@ -112,16 +117,24 @@ header .box {
   box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
   transition: all 1s;
 }
-.to-do-list .tdl-content .tdl-input .input-container .tdl-new-input:hover {
+.to-do-list .tdl-content .tdl-input .tdl-input-top .input-container .tdl-new-input:hover {
   background: linear-gradient(145deg, #d5d0c3, #fef7e8);
   box-shadow: 5px 5px 15px #a6a298, -5px -5px 15px #ffffff;
 }
-.to-do-list .tdl-content .tdl-input .input-container .tdl-new-input:focus {
+.to-do-list .tdl-content .tdl-input .tdl-input-top .input-container .tdl-new-input:focus {
   background: #EDE7D9;
   box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff;
 }
+.to-do-list .tdl-content .tdl-input .tdl-input-bot {
+  height: 16px;
+}
+.to-do-list .tdl-content .tdl-input .tdl-input-bot .input-alert {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #D63406;
+}
 .to-do-list .tdl-content .tdl-filters {
-  margin-top: 50px;
+  margin-top: 33px;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -141,6 +154,69 @@ header .box {
 }
 .to-do-list .tdl-content .tdl-filters .filters-buttons .button-container .active {
   color: #D5A021;
+}
+.to-do-list .tdl-content .tdl-output {
+  margin-top: 50px;
+  width: 600px;
+}
+.to-do-list .tdl-content .tdl-output .output-card {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  background: #EDE7D9;
+  box-shadow: 25px 25px 50px #a6a298, -25px -25px 50px #ffffff;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-task-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-task-name .task-name-input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  text-align: center;
+  font-family: "noland-blod";
+  font-size: 40px;
+  color: #D5A021;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons .button-container {
+  width: 30%;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons .button-container .tdl-card-btn {
+  width: 100%;
+  color: #4B4237;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons .button-container-d {
+  display: block;
+  width: 30%;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons .button-container-d .tdl-card-btn {
+  width: 100%;
+  color: #4B4237;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons .button-containers {
+  width: 30%;
+  display: none;
+  justify-content: space-between;
+}
+.to-do-list .tdl-content .tdl-output .output-card .card-buttons .button-containers .tdl-card-btn {
+  width: 45%;
+  color: #4B4237;
 }
 
 /* ######### RESPONSIVE ######### */

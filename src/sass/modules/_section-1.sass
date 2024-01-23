@@ -7,7 +7,7 @@
         display: flex
         flex-direction: column
         align-items: center
-        .button-container
+        .button-container, .button-containers, .button-container-d
             button
                 cursor: pointer
                 height: 50px
@@ -29,28 +29,38 @@
                 box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff
         .tdl-input
             display: flex
-            gap: 25px
-            .input-container
-                .tdl-new-input
-                    height: 50px
-                    width: 350px
-                    border: none
-                    outline: none
-                    color: #4B4237
+            flex-direction: column
+            gap: 17px
+            .tdl-input-top
+                display: flex
+                gap: 25px
+                .input-container
+                    .tdl-new-input
+                        height: 50px
+                        width: 350px
+                        border: none
+                        outline: none
+                        color: #4B4237
+                        padding: 0 15px
+                        font-size: 20px
+                        border-radius: 10px
+                        background: #EDE7D9
+                        box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
+                        transition: all 1s
+                    .tdl-new-input:hover
+                        background: linear-gradient(145deg, #d5d0c3, #fef7e8)
+                        box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
+                    .tdl-new-input:focus
+                        background: #EDE7D9
+                        box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff
+            .tdl-input-bot
+                height: 16px
+                .input-alert
                     padding: 0 15px
-                    font-size: 20px
-                    border-radius: 10px
-                    background: #EDE7D9
-                    box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
-                    transition: all 1s
-                .tdl-new-input:hover
-                    background: linear-gradient(145deg, #d5d0c3, #fef7e8)
-                    box-shadow:  5px 5px 15px #a6a298, -5px -5px 15px #ffffff
-                .tdl-new-input:focus
-                    background: #EDE7D9
-                    box-shadow: inset 5px 5px 15px #a6a298, inset -5px -5px 15px #ffffff
+                    font-size: 16px
+                    color: #D63406
         .tdl-filters
-            margin-top: 50px
+            margin-top: 33px
             display: flex
             align-items: center
             gap: 25px
@@ -67,6 +77,58 @@
                         color: #4B4237
                     .active
                         color: #D5A021
+        .tdl-output
+            margin-top: 50px
+            width: 600px
+            .output-card
+                padding: 25px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-around
+                height: 250px
+                width: 100%
+                border-radius: 10px
+                background: #EDE7D9
+                box-shadow:  25px 25px 50px #a6a298, -25px -25px 50px #ffffff
+                .card-task-name
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 70px
+                    width: 100%
+                    .task-name-input
+                        outline: none
+                        width: 100%
+                        height: 100%
+                        background: none
+                        border: none
+                        text-align: center
+                        font-family: "noland-blod"
+                        font-size: 40px
+                        color: #D5A021
+                .card-buttons
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    .button-container
+                        width: 30%
+                        .tdl-card-btn
+                            width: 100%
+                            color: #4B4237
+                    .button-container-d
+                        display: block
+                        width: 30%
+                        .tdl-card-btn
+                            width: 100%
+                            color: #4B4237
+                    .button-containers
+                        width: 30%
+                        display: none
+                        justify-content: space-between
+                        .tdl-card-btn
+                            width: 45%
+                            color: #4B4237
 
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
