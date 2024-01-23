@@ -23,21 +23,25 @@ header {
   height: 100px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
   background: #4B4237;
 }
-header div {
+header .img img {
+  height: 75px;
+}
+header .text {
   height: fit-content;
   width: fit-content;
 }
-header div h1 {
+header .text h1 {
   font-family: "noland-blod";
   font-size: 46px;
   text-align: center;
   color: #D5A021;
 }
-header div p {
+header .text p {
   font-size: 18px;
   text-align: center;
   color: #A49694;
