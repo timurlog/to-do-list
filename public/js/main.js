@@ -1,5 +1,4 @@
 import { createNewTask } from "./create-new-task.js";
-// import { filters } from "./filters.js";
 
 let addBtn = document.querySelector('#tdlInputAdd');
 let newTaskName = document.querySelector('#tdlNewInput');

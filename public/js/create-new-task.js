@@ -1,4 +1,4 @@
-import { menuCards, menuFilterItems } from "./main.js";
+import { menuCards } from "./main.js";
 
 let newTaskName = document.querySelector('#tdlNewInput');
 let inputAlert = document.querySelector('.input-alert');
