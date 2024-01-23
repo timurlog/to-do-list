@@ -158,6 +158,9 @@ header .box {
 .to-do-list .tdl-content .tdl-output {
   margin-top: 50px;
   width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 .to-do-list .tdl-content .tdl-output .output-card {
   padding: 25px;

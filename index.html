@@ -33,7 +33,7 @@
                 <div class="tdl-input">
                     <div class="tdl-input-top">
                         <div class="input-container">
-                            <input maxlength="25" onclick="sound('./public/assets/music/click-sound.mp3')" placeholder="Add a new task" type="text" name="new-to-do-list" class="tdl-new-input">
+                            <input maxlength="25" onclick="sound('./public/assets/music/click-sound.mp3')" placeholder="Add a new task" type="text" name="new-to-do-list" class="tdl-new-input" id="tdlNewInput">
                         </div>
                         <div class="button-container">
                             <button onclick="sound('./public/assets/music/click-sound.mp3')" id="tdlInputAdd" class="tdl-input-add">Add</button>
@@ -59,17 +59,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="tdl-output">
+                <div id="tdlOutput" class="tdl-output">
                     <div class="output-card">
                         <div class="card-task-name">
-                            <input readonly maxlength="25" value="Pomme" type="text" name="" id="" class="task-name-input">
+                            <input readonly maxlength="25" value="Pomme" type="text" name="new-to-do-list" class="task-name-input">
                         </div>
                         <div class="card-buttons">
                             <div class="button-container">
-                                <button onclick="sound('./public/assets/music/click-sound.mp3')" id="tdlCardDone" class="tdl-card-btn">Done</button>
+                                <button onclick="sound('./public/assets/music/click-sound.mp3')" class="tdl-card-btn">Done</button>
                             </div>
                             <div class="button-container">
-                                <button onclick="sound('./public/assets/music/click-sound.mp3')" id="tdlCardEdit" class="tdl-card-btn">Edit</button>
+                                <button onclick="sound('./public/assets/music/click-sound.mp3')" class="tdl-card-btn">Edit</button>
                             </div>
                             <div class="button-container-d">
                                 <button onclick="sound('./public/assets/music/click-sound.mp3')" class="tdl-card-btn">Delete</button>
