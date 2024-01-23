@@ -49,37 +49,17 @@
                     </div>
                     <div class="filters-buttons">
                         <div class="button-container">
-                            <button id="tdlFilterAll" class="tdl-filters-btn active">All</button>
+                            <button data-filter="*" id="tdlFilterAll" class="tdl-filters-btn active">All</button>
                         </div>
                         <div class="button-container">
-                            <button id="tdlFilterProgress" class="tdl-filters-btn">In Progress</button>
+                            <button data-filter=".inProgress" id="tdlFilterProgress" class="tdl-filters-btn">In Progress</button>
                         </div>
                         <div class="button-container">
-                            <button id="tdlFilterDone" class="tdl-filters-btn">Done</button>
+                            <button data-filter=".isDone" id="tdlFilterDone" class="tdl-filters-btn">Done</button>
                         </div>
                     </div>
                 </div>
                 <div id="tdlOutput" class="tdl-output">
-                    <div class="output-card">
-                        <div class="card-task-name">
-                            <input readonly maxlength="25" value="Pomme" type="text" name="new-to-do-list" class="task-name-input">
-                        </div>
-                        <div class="card-buttons">
-                            <div class="button-container">
-                                <button class="tdl-card-btn">Done</button>
-                            </div>
-                            <div class="button-container">
-                                <button class="tdl-card-btn">Edit</button>
-                            </div>
-                            <div class="button-container-d">
-                                <button class="tdl-card-btn">Delete</button>
-                            </div>
-                            <div class="button-containers">
-                                <button class="tdl-card-btn delete-yes">Yes</button>
-                                <button class="tdl-card-btn delete-no">No</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
