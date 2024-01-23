@@ -1,7 +1,7 @@
 /* ########### FONTS ############ */
 @font-face {
-  font-family: "";
-  src: url("../assets/fonts/");
+  font-family: "noland-blod";
+  src: url("../assets/fonts/noland-blod.ttf");
 }
 /* ############ BODY ############  */
 * {
@@ -14,11 +14,35 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #EDE7D9;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ########### HEADER ########### */
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4B4237;
+}
+header div {
+  height: fit-content;
+  width: fit-content;
+}
+header div h1 {
+  font-family: "noland-blod";
+  font-size: 46px;
+  text-align: center;
+  color: #D5A021;
+}
+header div p {
+  font-size: 18px;
+  text-align: center;
+  color: #A49694;
+}
+
 /* ######### RESPONSIVE ######### */
 /* ### SMARTPHONE ### */
 /* ### TABLET ### */
